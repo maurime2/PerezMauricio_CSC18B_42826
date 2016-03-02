@@ -1,0 +1,24 @@
+00:00:00	-	Forums and Homework Due
+
+00:10:00	-	
+			-	AWT: Abstract Windows Template.
+			-	Extends - Inerits.
+			-	Super invokes the parent class.
+			
+			- Anonymous Object in line 17 Fig 13.05.06 - ColorPanel.java
+00:36:20	- Path ENvironment Variable - go to program files, java, jdk1.8.00
+				javac, copy and 
+					c:\users\rcc>path=%path%;c:\proram Files\Java\jdk1.8.0_60\bin
+					
+00:39:30				from comand line	
+			
+00:59:00	- how to compile
+				javac fonts.java
+				java Fonts
+				
+				
+01:03:00	- Font Spacing
+			
+			HW DUE
+			- 12.14 - Guess the number Game
+			- 
