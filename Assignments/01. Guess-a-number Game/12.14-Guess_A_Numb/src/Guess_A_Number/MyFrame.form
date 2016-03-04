@@ -23,13 +23,13 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
+          <Group type="102" attributes="0">
               <EmptySpace pref="28" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="2" attributes="0">
                   <Component id="gNumGuessLable" alignment="2" min="-2" pref="405" max="-2" attributes="0"/>
                   <Component id="gNumbTextfield" alignment="2" min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="eButon" alignment="2" min="-2" max="-2" attributes="0"/>
                   <Component id="highOrLowLable" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="colorLable" alignment="2" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
           </Group>
@@ -42,11 +42,11 @@
               <Component id="gNumGuessLable" min="-2" pref="33" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="gNumbTextfield" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="eButon" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="highOrLowLable" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="182" max="32767" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="colorLable" min="-2" pref="184" max="-2" attributes="0"/>
+              <EmptySpace pref="27" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -59,14 +59,6 @@
       <AccessibilityProperties>
         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="gNumLable"/>
         <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
-      </AccessibilityProperties>
-    </Component>
-    <Component class="javax.swing.JButton" name="eButon">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Enter"/>
-      </Properties>
-      <AccessibilityProperties>
-        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="eButon"/>
       </AccessibilityProperties>
     </Component>
     <Component class="javax.swing.JTextField" name="gNumbTextfield">
@@ -87,6 +79,16 @@
       </Properties>
       <AccessibilityProperties>
         <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="highOrLowLable"/>
+      </AccessibilityProperties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="colorLable">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="ff" red="66" type="rgb"/>
+        </Property>
+      </Properties>
+      <AccessibilityProperties>
+        <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="colorLable"/>
       </AccessibilityProperties>
     </Component>
   </SubComponents>

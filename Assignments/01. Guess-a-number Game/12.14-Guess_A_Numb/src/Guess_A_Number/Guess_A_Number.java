@@ -1,8 +1,8 @@
 
-package prob10;
+package Guess_A_Number;
 
 
-public class Prob10 {
+public class Guess_A_Number {
 
     public static void main(String[] args) {
         MyFrame frm = new MyFrame();
