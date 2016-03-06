@@ -1,5 +1,5 @@
 
-package prob10;
+package Guess_A_Number;
 
 
 public class MyFrame extends javax.swing.JFrame {
@@ -9,22 +9,20 @@ public class MyFrame extends javax.swing.JFrame {
     
     public MyFrame() {
         initComponents();
-        this.setVisible(true);  //Shows Hello World
+        this.setVisible(true);  //Need this to display window
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         gNumGuessLable = new javax.swing.JLabel();
-        eButon = new javax.swing.JButton();
         gNumbTextfield = new javax.swing.JTextField();
         highOrLowLable = new javax.swing.JLabel();
+        colorLable = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         gNumGuessLable.setText("I have a number between 1 and 1000. Can you guess my number?");
-
-        eButon.setText("Enter");
 
         gNumbTextfield.setText("1");
         gNumbTextfield.addActionListener(new java.awt.event.ActionListener() {
@@ -35,17 +33,19 @@ public class MyFrame extends javax.swing.JFrame {
 
         highOrLowLable.setText("High or Low");
 
+        colorLable.setBackground(new java.awt.Color(102, 255, 51));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap(28, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(gNumGuessLable, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(gNumbTextfield, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(eButon)
-                    .addComponent(highOrLowLable))
+                    .addComponent(highOrLowLable)
+                    .addComponent(colorLable))
                 .addGap(26, 26, 26))
         );
         layout.setVerticalGroup(
@@ -55,47 +55,56 @@ public class MyFrame extends javax.swing.JFrame {
                 .addComponent(gNumGuessLable, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(gNumbTextfield, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(eButon)
-                .addGap(29, 29, 29)
+                .addGap(18, 18, 18)
                 .addComponent(highOrLowLable)
-                .addContainerGap(182, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(colorLable, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(27, Short.MAX_VALUE))
         );
 
         gNumGuessLable.getAccessibleContext().setAccessibleName("gNumLable");
         gNumGuessLable.getAccessibleContext().setAccessibleDescription("");
-        eButon.getAccessibleContext().setAccessibleName("eButon");
         gNumbTextfield.getAccessibleContext().setAccessibleName("gNumbTextfield");
         gNumbTextfield.getAccessibleContext().setAccessibleDescription("");
         highOrLowLable.getAccessibleContext().setAccessibleName("highOrLowLable");
+        colorLable.getAccessibleContext().setAccessibleName("colorLable");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void gNumbTextfieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gNumbTextfieldActionPerformed
-        // TODO add your handling code here:
-                // convert String inputs to int values for use in a calculation
         
-        
+        //Convert Strings to Ints
         String text = gNumbTextfield.getText();
-                num = Integer.parseInt(text);
-        //Changes Hot or Cold Lable    
+                //God Mode                            //GOD MODE DOSE NOT WORK
+                if(text == "123456"){                //Wanted to display number
+                    highOrLowLable.setText(Integer.toString(gNum));
+                }
+                else {
+                    num = Integer.parseInt(text);
+                }
                 
-        if(num<1 || num>10000){
+        //Changes Hot or Cold Lable
+        if(text == "123456"){              //This Should have displayed god mode
+            highOrLowLable.setText(Integer.toString(gNum));
+        }
+        else if(num<1 || num>1000){        //Out of range
         highOrLowLable.setText("Out of Range");
+        colorLable.setBackground(new java.awt.Color(0, 0, 0));
         }
-        else if(num<gNum){
+        else if(num<gNum){                //Number is Less than
         highOrLowLable.setText("Too Low");
+        colorLable.setBackground(new java.awt.Color(0, 0, 255));
         }
-        else if(num==gNum){
+        else if(num==gNum){               //Number is gNum
         highOrLowLable.setText("Correct!!!");
+                colorLable.setBackground(new java.awt.Color(0, 255, 0));
         }
-        else if(num<gNum){
+        else if(num>gNum){                //Number is greater than gNum
         highOrLowLable.setText("Too High");
+        colorLable.setBackground(new java.awt.Color(255, 0, 0));
         }
-                
     }//GEN-LAST:event_gNumbTextfieldActionPerformed
-
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -130,7 +139,7 @@ public class MyFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton eButon;
+    private javax.swing.JTextField colorLable;
     private javax.swing.JLabel gNumGuessLable;
     private javax.swing.JTextField gNumbTextfield;
     private javax.swing.JLabel highOrLowLable;
