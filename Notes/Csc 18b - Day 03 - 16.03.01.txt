@@ -5,7 +5,7 @@
 			-	Extends - Inerits.
 			-	Super invokes the parent class.
 			
-			- Anonymous Object in line 17 Fig 13.05.06 - ColorPanel.java
+00:33:00	- Anonymous Object in line 17 Fig 13.05.06 - ColorPanel.java
 00:36:20	- Path ENvironment Variable - go to program files, java, jdk1.8.00
 				javac, copy and 
 					c:\users\rcc>path=%path%;c:\proram Files\Java\jdk1.8.0_60\bin
