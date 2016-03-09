@@ -1,0 +1,34 @@
+14.22 (Morse Code) - DUE 2016.03.25
+Perhaps the most famous of all coding schemes is the Morse code, developed by
+Samuel Morse in 1832 for use with the telegraph system. The Morse code assigns
+a series of dots and dashes to each letter of the alphabet, each digit, and a
+few special characters (e.g., period, comma, colon, semicolon). 
+
+In sound-oriented systems, the dot represents a short sound and the dash a long
+sound. Other representations of dots and dashes are used with light-oriented
+systems and signal-flag systems. Separation between words is indicated by a
+space or, simply, the absence of a dot or dash. In a sound-oriented system, a
+space is indicated by a short time during which no sound is transmitted. The 
+international version of the Morse code appears in Fig. 14.26.
+
+Write an application that reads an English-language phrase and encodes it into 
+Morse code.
+
+Also write an application that reads a phrase in Morse code and converts it
+into the English-lan-guage equivalent. Use one blank between each Morse-coded
+letter and three blanks between each Morse-coded word.
+
+Character	Code	Character	Code	Code	Digits
+A 			.- 		N 			-. 
+B 			-... 	O  			--- 	1 		.----
+C 			-.-. 	P  			.--. 	2 		..---
+D 			-.. 	Q  			--.- 	3 		...--
+E 			. 		R  			.-. 	4 		....-
+F 			..-. 	S  			... 	5 		.....
+G 			--. 	T  			- 		6 		-....
+H 			.... 	U  			..- 	7 		--...
+I  			.. 		V  			...- 	8 		---..
+J  			.--- 	W  			.-- 	9 		----.
+K  			-.- 	X  			-..- 	0 		-----
+L  			.-.. 	Y  			-.--
+M  			-- 		Z  			--..
