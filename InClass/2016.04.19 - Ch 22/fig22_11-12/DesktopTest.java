@@ -1,19 +1,17 @@
+// Fig. 22.12: DesktopTest.java
+// Demonstrating JDesktopPane.
 import javax.swing.JFrame;
-//package popupframe;
-// Fig. 22.8: PopupTest.java
-// Testing PopupFrame.
 
-
-public class PopupTest 
+public class DesktopTest 
 {
    public static void main(String[] args)
    { 
-      PopupFrame popupFrame = new PopupFrame();
-      popupFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      popupFrame.setSize(300, 200); 
-      popupFrame.setVisible(true);
+      DesktopFrame desktopFrame = new DesktopFrame();  
+      desktopFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      desktopFrame.setSize(600, 480); 
+      desktopFrame.setVisible(true); 
    } 
-} // end class PopupTest
+} // end class DesktopTest
 
 /**************************************************************************
  * (C) Copyright 1992-2014 by Deitel & Associates, Inc. and               *
