@@ -11,3 +11,6 @@
 00.31.00			-	JPanel and MyJPanel
 
 00.47.59			-	Set Border
+
+Homework
+22.7 and apply jslider to it

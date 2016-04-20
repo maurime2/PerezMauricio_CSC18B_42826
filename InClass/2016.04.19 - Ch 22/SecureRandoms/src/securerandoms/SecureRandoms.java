@@ -17,6 +17,8 @@ public class SecureRandoms {
             if(a[i]>max) {max=a[i]; max_index=i; }
             if(a[i]>min) {max=a[i]; min_index=i; }
         }
+        System.out.printf("Minimum value of %d found at index %d\n",min,min_index);
+        System.out.printf("Maximum value of %d found at index %d\n",max,max_index);
     }
     
     public static void main(String[] args) {
@@ -30,6 +32,9 @@ public class SecureRandoms {
         for(int i=0;i<1000000;i++) freq[generator.nextInt(100)]++;
         
         for(int i=0;i<freq.length;i++) System.out.printf("%d Was Picked %d times ...\n",i,freq[i]);
+        
+        //MinMax(freq);
+        
     }
     
 }
