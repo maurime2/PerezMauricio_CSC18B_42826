@@ -8,4 +8,6 @@
 				Only one method in runnable:
 					- run
 					
+				Two threads, the one sleeping the longest will run first.
 				
+				hw 23.10

@@ -10,7 +10,7 @@ public class SharedArray
    public static void main(String[] arg)
    {
       // construct the shared object
-      SimpleArray sharedSimpleArray = new SimpleArray(6);
+      SimpleArray sharedSimpleArray = new SimpleArray(6);   //CHANGE VALUE FOR MORE/LESS THREADS
 
       // create two tasks to write to the shared SimpleArray
       ArrayWriter writer1 = new ArrayWriter(1, sharedSimpleArray);

@@ -21,6 +21,7 @@ public class ArrayWriter implements Runnable
 
    public void run()
    {
+      //Sys
       for (int i = startValue; i < startValue + 3; i++)
       {
          sharedSimpleArray.add(i); // add an element to the shared array
