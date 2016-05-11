@@ -1,0 +1,111 @@
+00:03:00	- No Java FX
+
+			- ON TUDAYS MENU:
+				5/10 - 	Tonight is specific to databases termonology, setting 
+						up a database, and learning about queries.
+						
+				5/17 -	next week: Java and the JDBC
+				
+				5/24 -	Java JDBC/GUI with JDBC
+						Final Project Specs Released.
+						
+00:06:00		Derby and Java File connection.
+
+00:07:10	- RDMS:	Relational Database Managment System.
+			  SQL:	Structure Queery Language.
+			  
+			  DATABASE:
+00:09:30	- Database is tables - Think of it as a spreadsheet.
+
+				*columns = Fields
+				*rows 	= Records
+			
+				Each Field is a Data Type
+			
+00:12:30		*Primary Key : is a field containing unique data that can be 
+								used to link tables.
+								
+				*Query  - Action on tables in a database.
+				*Select - Retrieves data from a table 
+						  (* is used as wildcard to get ALL fields from record)
+						  [CAREFUL WITH THIS!!!]
+00:17:30				   Consulting anecdote about fields: 400 - 600 fields.
+
+
+00:20:00	Query -	Action on table(s) ina database.
+			Select - Retrieves data from a table (* is used as a wildcard to get all fields )
+			Insert - inserts data into a table 
+			Update - updates excisting data into table
+			Delete - deletes column or row from table
+			
+00:24:20	- Anecdote about Bobby Tables
+
+00:28:00	- String sql = "Select * From Student Where StudentName='";
+			  sql = sql + studentNameTextbox.getText()+"';";
+			  
+00:30:00	- sql = "Select * from Students where StudentName = 'Robert'); Drop Table Strudents:--';
+
+			UNIQUE RECORDS : FIG 24.3 PG: 1092
+00:37:00	- Multiple Inputs say like Paul Conrad and Paul Smith
+				* You can have an ID number associated with each
+				- Author ID - Primary key, auto incremented.
+				- FirstName - String datatype.
+				- LastName  - String datatype.
+			
+			AUTHOR TABLE
+			Author ID	Firstname	LastName
+			1			Paul		Conrad
+			2			Bill		Jones
+			3			Amy			Smite
+			4			Paul		Jones
+			5			Jeff		Adams
+			6			
+			
+00:42:00	ISBN		String
+			Title		String
+			Edition		int
+			CopyRight	int
+			
+			TITLE TABLE
+			ISBN	Title	Edition	CopyWrite
+			1311	***		***		***
+			1478	***		***		***
+			1561	***		***		***
+			2114	***		***		***
+			3881	***		***		***
+			
+
+00:45:00	How to tie an author to a book
+
+00:46:00	Foreign Key
+					FK
+			Author ID - Int
+			ISBN Number - String
+			
+			AUTHOR ISBN TABLE
+			authorID(FK)	ISBN Number
+			1				1331
+			2				1331
+			3				1331
+			1				1478
+			1				1561
+			3				1561
+			3				2114
+			3				3881
+			
+.sql or erd for final			
+00:50:40	ERD
+			Entity Relationship Diagram
+
+			
+			AUTHOR TABLE			AUTHOR ISBN					TITLE
+			(pk)Author ID: int	-->	(FK) AuthorID: int		:-	ISBN: String
+			FirstName: String		ISBNNumber: String	<---:	Title: String
+			LastName:  String									Editor: int
+																Copyright: int
+
+																
+00:58:34	Relationships for queries are what puts them together.
+			Fig 24.9 - PG: 1095
+			
+01:00:40	SELECT QUERRIES:
