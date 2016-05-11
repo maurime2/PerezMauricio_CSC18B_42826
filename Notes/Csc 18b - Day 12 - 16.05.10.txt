@@ -31,7 +31,7 @@
 						  [CAREFUL WITH THIS!!!]
 00:17:30				   Consulting anecdote about fields: 400 - 600 fields.
 
-
+			SQL COMANDS
 00:20:00	Query -	Action on table(s) ina database.
 			Select - Retrieves data from a table (* is used as a wildcard to get all fields )
 			Insert - inserts data into a table 
@@ -109,3 +109,35 @@
 			Fig 24.9 - PG: 1095
 			
 01:00:40	SELECT QUERRIES:
+			{fields in table you want to select comma sep.}
+				FROM {table names} [WHERE {condition} ORDER BY fieldname(s) {ASC/DESC}]
+				
+										ASC 	- Ascending small to large
+										Desc	- Decending from large to small
+01:06:15	sort querry result:
+
+01:08:50	Select all data in the database: You could do the following
+								AUTHOR TABLE
+								ID	F		L					
+								1 	Paul	Conrad
+								2	Amy		Smith
+								3	Bill	Jones
+			
+				SELECT * FROM author;	//This statement allone would select all fields
+										//(there * reads as "all fields")
+					ID	F		L					
+					1 	Paul	Conrad
+					2	Amy		Smith
+					3	Bill	Jones
+01:11:50
+				To work with derby, we will use IJ.
+				First find location.
+				
+01:20:14		Books.sql file rundown...
+
+01:25:00		Running Book Example (See Pictures and File)
+						some commands:
+						show all;
+						Select all;
+				
+
