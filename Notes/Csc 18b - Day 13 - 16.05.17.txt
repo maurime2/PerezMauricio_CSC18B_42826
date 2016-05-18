@@ -1,2 +1,10 @@
 00:01:10	in netbeanss: services tab
-				
+				JDBC - Java Database Conector
+				ODBC - Open Database Connectivity
+00:06:50	SQL - Structured Query Language
+
+
+00:10:30	LAST WEEK: SQL	
+				Select Key Word
+
+
