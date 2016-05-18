@@ -1,0 +1,3 @@
+Implement the program for Chapter 22 Exercise #8 (you will have to do exercise #7 to do this, so I will give an extra week and a few days to complete this).
+
+Due 4/29/16 @ 11:59PM
