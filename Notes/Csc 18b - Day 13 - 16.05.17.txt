@@ -6,5 +6,86 @@
 
 00:10:30	LAST WEEK: SQL	
 				Select Key Word
+					SELECT Fields FROM Tables // "*" For all fields.
 
+			Looking at SQL 1
+			
+00:15:40	SELECTING ALL FIELDS:			//Optional: "APP.Customer"
+					SELECT * FROM customer ORDER BY name ASC;	//DESC (Z-A)
+									//IF ASC (A-Z) is not precent, ASC by default
+									
+00:23:10 - Anecdote - DATABASES and fetching fields
+				Fetching selective fields.
+			SELECT * FROM customer ORDER BY name DESC;
 
+			
+			
+			CUSTOMER			|--Foreign Key			DISCOUNT_CODE
+			*****************	|		|------->	*********************
+			*Cust_ID		*	|		|			*DISCOUNT_CODE(Pk)	*
+			*Discount_Code	* (FK)		|	|---->	*RATE				*
+			*.				*------------	|		*					*
+			*.				*<---------------		*					*
+			*.				*						*					*
+			*****************						*********************
+			Name, city, state, Phone # order by State Ascenting order and by 
+			name in desc.order:		
+			
+			SELECT name, city, state, phone FROM customer ORDER BY state, name DESC
+			
+			change order:
+			SELECT name, city, state, phone FROM customer ORDER BY state DESC, name
+
+00:32:40	How to bring in another discount table?
+			
+			JOIN
+			SELECT name, city, state, phone, rate FROM customer, discount_code ORDER BY state DESC, name
+00:35:02	Cartesian Product: The result of the line above:
+
+			FIX: //ALSO YOU CAN BREAK THE LINES WITHOUT A PROBLEM
+			SELECT name, city, state, phone, rate FROM customer, discount_code 
+			WHERE customer.DISCOUNT_CODE=discount_code.DISCOUNT_CODE ORDER BY state DESC, name
+			
+00:40:50	SELECT name, city, state, phone, rate FROM customer, discount_code 
+			WHERE customer.DISCOUNT_CODE=discount_code.DISCOUNT_CODE ORDER BY state, rate DESC
+			
+00:43:00	Writing an aplication with Java:
+			jdbc:derby://localhoast1527/sample
+			
+			
+00:59:00	Create our own entety class in our project FROM EXISTING DATABASES
+
+01:04:50	PREVENT INJECTION ATTACKS: PERAMITARISED QUERIES
+				STRING CONCATINATION allows SQL INJECTION
+				
+			Getting our entetirs
+01:09:00	Get and set methods				
+			
+			//OLD CODE:
+					
+				String DATABASE_URL = "jdbc:derby://localhost:1527/sample [app on APP]";
+				String SQL_STATEMENT = "SELECT name, city, state, phone, rate FROM customer, discount_code \n" +
+					"WHERE customer.DISCOUNT_CODE=discount_code.DISCOUNT_CODE ORDER BY state, rate DESC";
+				
+				try {
+					 Connection connection = DriverManager.getConnection(DATABASE_URL, "app", "");
+					 Statement sqlStatement = connection.createStatement();
+					 ResultSet rs = sqlStatement.executeQuery(SQL_STATEMENT);
+					 
+					 ResultSetMetaData rsmd = rs.getMetaData();
+					 int columns = rsmd.getColumnCount();
+					 
+						for (int i=0;i<columns; i++)
+						{
+							System.out.printf("%-8s\t",rsmd.getColumnName(i+1));
+						}
+					 }
+					catch (SQLException e)
+					{
+						e.printStackTrace();
+					}
+			//OLD CODE DONE
+			
+			
+01:22:25	last try
+			http://vogella.com/tutorials/ApacheDerby/article.html
