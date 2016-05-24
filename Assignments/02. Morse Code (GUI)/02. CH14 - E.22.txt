@@ -1,5 +1,5 @@
 14.22 (Morse Code) - DUE 2016.03.25
-Perhaps the most famous of all coding schemes is the Morse code, developed by
+Perhaps the most famous of all coding schemes is the Morse code, developed by 
 Samuel Morse in 1832 for use with the telegraph system. The Morse code assigns
 a series of dots and dashes to each letter of the alphabet, each digit, and a
 few special characters (e.g., period, comma, colon, semicolon). 
@@ -15,8 +15,10 @@ Write an application that reads an English-language phrase and encodes it into
 Morse code.
 
 Also write an application that reads a phrase in Morse code and converts it
-into the English-lan-guage equivalent. Use one blank between each Morse-coded
-letter and three blanks between each Morse-coded word.
+into the English-lan-guage equivalent.
+
+Use one blank between each Morse-coded letter 
+three blanks between each Morse-coded word.
 
 Character	Code	Character	Code	Code	Digits
 A 			.- 		N 			-. 

@@ -1,0 +1,45 @@
+				Serialization
+				Looking at text files and integers, floats strings, their was
+				a particular order data was being wrote out.
+				When we read it in, it also needs to be read in that order.
+				
+				Class Account implement Serializable
+				{
+				private string name;
+				private fleat balance;
+				pricate string number;
+				...
+				....
+				.....
+				}
+
+
+				Account my Acct = new Account();
+				myAcct.SetName()"Jones";
+				myAcct.setBalance(1000.00);
+				myAcct.setNumber("341-5511");
+				.
+				..
+				...
+				....
+				.....
+
+
+00:12:30		64 bit integer
+								 10		0.25
+								[int][double]
+				0000 0000 0000 1010	 0011 1111 1101 0000...
+				
+				Fig 
+				15.10
+00:30:00				
+				Command Line Execute
+				Cd Desktop\ch15>cd SerializationApps
+				Desktop\ch15>cd SerializationApps
+				
+				programfiles java jdk
+				
+00:36:50
+				space is the delimiter
+			
+00:51:00		Intelisence

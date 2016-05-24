@@ -1,0 +1,13 @@
+00:00:00	FINAL ON THE 7TH - 2 Part Final
+				20 Questions Final Exam.
+				24th - Final Project Assigned
+				
+				Concurancey Lecture Conclusion
+				
+00:18:50		in concurancy: we deal with runnable
+				Only one method in runnable:
+					- run
+					
+				Two threads, the one sleeping the longest will run first.
+				
+				hw 23.10

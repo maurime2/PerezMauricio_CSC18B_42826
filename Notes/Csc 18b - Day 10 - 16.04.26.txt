@@ -1,0 +1,15 @@
+				Threads
+				
+00:05:00	Runnable State:	We start the thread.
+			Waiting:		Thread waits for another thread to compeate.
+			Timed Waiting:	We wait for a specific time interval (Usually ms).
+			Block:			Runnable thread cannot finish a task untill anothe is complete.
+			Terminate:		Thread is done.
+			
+			
+00:11:50	GUI thread vsd non GUI thread:
+				Computing C(n,r) in its own thread.
+00:14:50	Big Integer Class: 50,000! is computable.
+
+
+00:24:00	Interface Runnable
