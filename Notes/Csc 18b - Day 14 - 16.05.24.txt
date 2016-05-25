@@ -1,0 +1,31 @@
+00:00:00	- 	Cars Database
+				Ch 24 Books Example
+				
+			Entity Relationship Diagram
+			*****************			*****************		*****************
+			*	authors		*			* authorISBN	*		* titles		*
+			*---------------*00		  00*---------------*		*---------------*
+			* authorID		* <------->	* authorID		*	|-->* isbn			*
+			* firstName		*			* isbn			*<--	* title			*
+			* lastName		*			* 				*		* edition		*
+			*****************			*****************		* copyright		*
+																*****************
+
+00:14:00	- 
+
+00:18:36	- How to connect to the datsabase
+				1. Connect to the database Server:
+					in Databases, start server.
+00.20.00		2. Create Database
+					a. Create Database name Etc..
+						this example: books
+					b. Select Password: - username: csc18b
+					c. Select Password: - password: csc18b
+					d. optionally change DB storage location or note where it is by default
+						D:\05. CSC 18B - Java Advanced Objects\PerezMauricio_CSC18B_42826\InClass\2016.05.24 - Books Database Tables\database Example\Database
+						Double click on jdbc:derby and open up database
+00:27:00			3. Right Click on jdbc:derby and execute command
+					
+					
+00:31:00		SOLUTION TO PROBLEM last week
+				C:\Program Files\Java\jdk1.8.0_60\db\lib/derbyclient.jar
