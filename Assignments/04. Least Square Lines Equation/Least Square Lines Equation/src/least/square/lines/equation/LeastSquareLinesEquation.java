@@ -1,3 +1,5 @@
+/*
+Mauricio S. Perez
 Assignment 4: Least Square Lines Equation - Text File I/O
 
 Write a Java console application, that does the following:
@@ -36,4 +38,48 @@ s l o p e space equals space fraction numerator begin display style sum for blan
     2. Correctly completed PSP Spreadsheet (with time properly documented) ( up to 10 points )
     3. Flowchart of your program's logic ( up to 10 points )
 
-    Path to open file: file://C:/data.txt
+    Path to open file: 
+    
+    E:\\00. Programing\\01. CSC 18B - Java Advanced Objects\\PerezMauricio_CSC18B_42826\\Assignments\\04. Least Square Lines Equation\\ReadTextFile\\src\\clients.txt
+    E:\00. Programing\01. CSC 18B - Java Advanced Objects\PerezMauricio_CSC18B_42826\Assignments\04. Least Square Lines Equation\Least Square Lines Equation\src\least\square\lines\equation\another_test.txt
+    E:\00. Programing\01. CSC 18B - Java Advanced Objects\PerezMauricio_CSC18B_42826\Assignments\04. Least Square Lines Equation\Least Square Lines Equation\src\least\square\lines\equation\data.txt
+
+
+*/
+
+//Libraries
+package least.square.lines.equation;
+import java.io.IOException;
+import java.nio.file.DirectoryStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Scanner;
+
+public class LeastSquareLinesEquation {
+
+    public static void main(String[] args) {
+        //Declare Local Variables
+        Scanner input = new Scanner (System.in);    //creates a scanner "input"
+        String textFile = null;
+      double x = 0;
+      double y = 0;
+      double sumX=0;
+      double sumY=0;
+      double sumXX=0;
+      double prodXY=0;
+      
+        //Declare Objects
+        ReadTextFile ReadTextFileObject = new ReadTextFile();//Reads in Text File
+        
+        //Prompt the user for the name of the text file
+        System.out.print("Input The File Path Name: ");
+        textFile=input.nextLine();
+        
+        //Reads In text
+        ReadTextFileObject.readText(textFile,  x, y, sumX,  sumY, sumXX, prodXY);
+        
+        
+    }
+    
+}
