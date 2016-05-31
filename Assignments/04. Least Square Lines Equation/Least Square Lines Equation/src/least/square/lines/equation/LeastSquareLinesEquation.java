@@ -23,7 +23,7 @@ Write a Java console application, that does the following:
 
 5. Compute the regression coefficients m and b for the equation of the least
     squares line equation, where m is the slope and b is the y-intercept.
-s l o p e space equals space fraction numerator begin display style sum for blank of end style x y space minus space begin display style stack left parenthesis sum with blank below end style x right parenthesis left parenthesis a v e r a g e space o f space y right parenthesis over denominator begin display style stack sum x with blank below end style squared space minus space begin display style stack left parenthesis sum with blank below end style x right parenthesis left parenthesis a v e r a g e space o f space x right parenthesis end fraction , you can find the y-intercept by subtracting from the average of y, the product of the slope and average of x.
+
 
 6. The output to the terminal screen must be:  
     Equation of least squares line: y = 3.33658x + 700.82837

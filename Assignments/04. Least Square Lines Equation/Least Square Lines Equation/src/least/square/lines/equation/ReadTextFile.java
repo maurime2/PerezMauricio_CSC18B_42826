@@ -139,6 +139,8 @@ public class ReadTextFile
    public static void readRecords(double x,double y,double sumX, double sumY,double sumXX, double prodXY)
    {  
       int count = 0;
+      double m = 0;
+      double b = 0;
       System.out.printf("%s%30s%n", "Temperature (c)",
          "Resistance (ohms)");
 
@@ -157,18 +159,25 @@ public class ReadTextFile
             sumY  = sumY+y; 
             sumXX = ((sumXX)+(x*x));
             count++;
-            if(count >= 6)
+
+         }//While loop End
+                     if(count >= 0)
             {
             prodXY = sumX*sumY;
             System.out.println("***********************************************");
+            System.out.println(count);
             System.out.printf("%s%30s%30s%30s%n", "Sum of X","Sum of Y","SUM OF XX","Prod SumX Sum Y");
             System.out.printf("%-30.4f%-30.4f%-30.4f%-30.4f%n", sumX, sumY,sumXX,prodXY);
-            
-            
+            System.out.println("***********************************************");
+                //Slope Calc
+               m=((prodXY)-  ((sumX)*(sumY/count)) ) / ((sumXX)-((sumX)*(sumX/count))) ;
+               // y-intercept calc
+               b=(sumY/count)-(sumX/count)*m;
+            System.out.println("***********************************************");
+            System.out.println("Equation of least squares line: y="+m+"x+"+b);
+               
             }
-         }
-         
-      } 
+      }//Try block end 
       catch (NoSuchElementException elementException)
       {
          System.err.println("File improperly formed. Terminating.");
