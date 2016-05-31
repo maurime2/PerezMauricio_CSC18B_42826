@@ -44,6 +44,7 @@ public class TokenizingTelNumbs {
         npaCheck npaObject = new npaCheck();
         gThanTen gThanTenObject = new gThanTen();
         cleanPhone cleanPhoneObject = new cleanPhone();
+        phoneToken phoneTokenPhoneObject = new phoneToken();
         
         //Prompt User For Phone Number untill valid:
         do{
@@ -74,7 +75,10 @@ public class TokenizingTelNumbs {
         
         
         //RETURN string as (XXX)XXX-XXXX format, store in phoneNumbClean
-        System.out.println("Your Phone Number is: "+phoneNumbClean);
+        System.out.println("Your Phone Number is: "+ phoneNumbClean);
+        
+        //Return as tokens:
+        phoneTokenPhoneObject.phonePrintTokens(phoneNumbClean);
         
     }//Main End
     

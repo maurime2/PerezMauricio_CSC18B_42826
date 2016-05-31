@@ -17,6 +17,7 @@
 
 //Libraries
 package tokenizingtelnumbs;
+import java.util.Arrays;    //to create arrays in Java
 
 //class cleanPhone Start
 public class cleanPhone {
@@ -26,17 +27,36 @@ public class cleanPhone {
     public String cleanString(String phoneNum, String cleanPhoneNum){
         //Declare Variables
         String temp = phoneNum;
+        String leftB = "(";
+        String rightB = ")";
+        String Space = "-";
         
-                //Prepare String Array to be manipulated
+        //Prepare String Array to be manipulated
+        temp = temp.replaceAll("[^\\d]", "");   //Removes All Punctuation w/reg expressions.
+        System.out.println("String With No Punctuations: "+temp);
+        
+        //Format String:
+            // "(" + AREA CODE + ")"
+            cleanPhoneNum = leftB;
+            for(int i=0;i<3;i++){
+                cleanPhoneNum =cleanPhoneNum+temp.charAt(i);
+            }
+            cleanPhoneNum = cleanPhoneNum+rightB;
+            
+            // 3 DIGITS + "-"
+            for(int i=3;i<6;i++){
+                cleanPhoneNum = cleanPhoneNum+temp.charAt(i);
+            }
+            cleanPhoneNum = cleanPhoneNum+Space;
 
-        temp = temp.replaceAll("[^\\d]", "");   //Removes All Punctuation.
-        System.out.println("Fixed String             : "+temp);
-        
-        
+            // LAST 4 DIGITS
+            for(int i=6;i<10;i++){
+                cleanPhoneNum = cleanPhoneNum+temp.charAt(i);
+            }
+            
         //Return clean string
-        cleanPhoneNum = temp;
         return cleanPhoneNum;
-    }
+    }//end clean string method
     
     
     
