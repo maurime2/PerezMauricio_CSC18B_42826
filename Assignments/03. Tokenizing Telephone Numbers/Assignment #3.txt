@@ -1,12 +1,16 @@
 14.8 - Tokenizing Telephone Numbers
 
-Write an application that inputs a telephone number as a string in the form of 
-(555) 555-5555. The application should use the String class method split to 
-extract the area code as a token, the first three digits of the phone number 
-as a token, and the last four digits of the phone number as a token as well. 
-The seven digits of the phone number should be concatenated into one string. 
-Both the area code and the phone number should be printed. Remember that you 
-will need to change the delimiter characters during the tokenization process.
+Write an application that inputs a telephone number as a string in the form of
+(555) 555-5555. 
+
+-	The application should use the String class method split to extract:
+		* the area code as a token
+		* the first three digits of the phone number as a token
+		* the last four digits of the phone number as a token.
+		
+	The seven digits of the phone number should be concatenated into one string. 
+	Both the area code and the phone number should be printed. Remember that you 
+	will need to change the delimiter characters during the tokenization process.
 
 Implement this program, document it well, and include your correctly completed 
 PSP Excel Spreadsheet.
