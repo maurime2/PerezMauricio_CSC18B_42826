@@ -1,0 +1,59 @@
+00:03:00	Final: Ch 12/22
+
+			Final Review:
+			-Gui - 3
+			-Graphics - 1
+			-Advanced Strings: 1
+			-Regular Expressions: 1
+			-Files/Streams/Object Serialzation: 2
+			-Concurrency: 1
+			-Database/JDBC: 1
+			
+00:07:00	Gui components:
+				JPanels, JFrames, JButtons, JSliders
+		
+			Event Driven Programing:
+				Action Listeners
+
+00:13:13	Ch 13: Graphics 
+				- Paint,Fonts,Colors,Deawing 2D Shapes, Lines
+			
+			Ch 14: Strings
+			Strings, String Builder
+			String Tokenizing - we breeak up a string using 
+								delimeters or regular expressions
+			Regex - Know about the basics of regular expressions
+						Pattern Characters
+						\d - Any Digits
+						\w - Any Word Character
+						\s - any white space character
+						\D - any Non Digit
+						\W - any nonword Character
+						\S - any non-whitespace Character
+						
+			Ch 15: Files/Stream/Object Serialization
+				- Know about the basic for Java File I/O
+				- Know about woeking with file paths
+				- Know about serialization and why we need it
+						when writing/reading binary data
+						
+						float **p= 0;
+						for(int i = 0;i<c;i++){
+						p[i]= new float[c]
+						}
+						
+			CH 23: Concurrency
+				- Know the diffeerence and similarities of concurrency and parallelism.
+				
+				- methods in runnable: 1 - RUN method
+				- know cibcyrrebct states
+				- know how to start a runnable thread
+
+LISTEN AGAIN				
+00:45:00	JDBC/DATABASES
+			- know about SQL - KEYWORDS, Building simple queries
+			- know about database servers (Derby) , creating databases.
+			- know JDBC - connection strings, prepared statements
+					PREVENTS SQL INJECTION
+					BOBBY TABLES - XKCD Comic
+			
