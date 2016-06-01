@@ -56,4 +56,6 @@ LISTEN AGAIN
 			- know JDBC - connection strings, prepared statements
 					PREVENTS SQL INJECTION
 					BOBBY TABLES - XKCD Comic
+00:48:00	Sub Contracting
+				CSV Files - Comma seperated values
 			
