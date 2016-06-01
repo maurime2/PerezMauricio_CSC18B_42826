@@ -1,3 +1,29 @@
-Implement the program for Chapter 22 Exercise #8 (you will have to do exercise #7 to do this, so I will give an extra week and a few days to complete this).
+Implement the program for Chapter 22 Exercise #8
+(you will have to do exercise #7 to do this, so I will give an extra week and a few days to complete this).
 
 Due 4/29/16 @ 11:59PM
+
+22.7 (Display a Circle and Its Attributes)
+Write a program that displays a circle of random size and calculates and 
+displays the area, radius, diameter and circumference. 
+
+Use the following equations: 
+	diameter 		= 2 × radius, area =  π  × radius 2
+	circumference 	= 2 ×  π  × radius. 
+	
+	Use the constant Math.PI for pi ( π ). 
+	All drawing should be done on a subclass of JPanel, 
+	Results of the calculations should be displayed in a read-only JTextArea.
+
+
+22.8 (Using a JSlider) 
+Enhance the program in Exercise 22.7 by allowing the user to alter the radius
+with a JSlider. 
+
+The program should work for all radii in the range from 100 to 200. 
+As the radius changes, the diameter, area and circumference should be updated
+and displayed. The initial radius should be 150. 
+
+Use the equations from Exercise 22.7. All drawing should be done on a subclass
+of JPanel, and the results of the calculations should be displayed in a 
+read-only JTextArea. 

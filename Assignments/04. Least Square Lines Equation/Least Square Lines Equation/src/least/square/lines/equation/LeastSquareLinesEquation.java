@@ -73,6 +73,7 @@ public class LeastSquareLinesEquation {
         ReadTextFile ReadTextFileObject = new ReadTextFile();//Reads in Text File
         
         //Prompt the user for the name of the text file
+        System.out.print("***********************************************\n");
         System.out.print("Input The File Path Name: ");
         textFile=input.nextLine();
         

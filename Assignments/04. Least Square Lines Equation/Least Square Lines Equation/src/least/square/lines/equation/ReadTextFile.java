@@ -161,11 +161,13 @@ public class ReadTextFile
             count++;
 
          }//While loop End
-                     if(count >= 0)
+            
+            //OUTPUT MATH
+            if(count >= 0)
             {
             prodXY = sumX*sumY;
             System.out.println("***********************************************");
-            System.out.println(count);
+            System.out.println(count+" ordered pairs processed...");
             System.out.printf("%s%30s%30s%30s%n", "Sum of X","Sum of Y","SUM OF XX","Prod SumX Sum Y");
             System.out.printf("%-30.4f%-30.4f%-30.4f%-30.4f%n", sumX, sumY,sumXX,prodXY);
             System.out.println("***********************************************");
@@ -174,9 +176,9 @@ public class ReadTextFile
                // y-intercept calc
                b=(sumY/count)-(sumX/count)*m;
             System.out.println("***********************************************");
-            System.out.println("Equation of least squares line: y="+m+"x+"+b);
-               
-            }
+            System.out.println("Equation of least squares line: y="+m+"x+"+b);   
+            }//END OUTPUT MATH
+            
       }//Try block end 
       catch (NoSuchElementException elementException)
       {
