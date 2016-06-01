@@ -56,6 +56,13 @@ LISTEN AGAIN
 			- know JDBC - connection strings, prepared statements
 					PREVENTS SQL INJECTION
 					BOBBY TABLES - XKCD Comic
+			Input Sanitisation important
+			
 00:48:00	Sub Contracting
 				CSV Files - Comma seperated values
-			
+			PREPARED STATEMENTS
+				A prepared statement is a feature used to execute the
+				same (or similar) SQL statements repeatedly with high
+				efficiency. Prepared statements basically work like 
+				this: Prepare: An SQL statement template is created
+				and sent to the database.
