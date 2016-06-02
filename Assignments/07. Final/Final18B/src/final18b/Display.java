@@ -10,9 +10,10 @@ import javax.swing.JPasswordField;
 import javax.swing.JOptionPane;
 import javax.swing.JLabel;
 import java.awt.Container;  //For Flow Layout
+import java.awt.BorderLayout;   //adds border layouts
 
 //Display
- public class Display extends JFrame 
+ public class Display extends JFrame
 {
    //JBUTTONS
     private final JButton previousB; // button with just text
@@ -45,6 +46,17 @@ import java.awt.Container;  //For Flow Layout
    private final JTextField carMilegeT; // text field with set size
    private final JTextField entryT; // text field with set size
    
+   //LAYOUT AND FORMATING
+   private final FlowLayout layout1; // layout object
+   private final FlowLayout layout2; // layout object
+   //private final FlowLayout layout3; // layout object
+   //private final FlowLayout layout4; // layout object
+   private final Container container1; // container to set layout
+   private final Container container2; // container to set layout
+   
+
+   
+   
    private final JTextField textField2; // text field with text
    private final JTextField textField3; // text field with text and size
    private final JPasswordField passwordField; // password field with text
@@ -64,13 +76,26 @@ import java.awt.Container;  //For Flow Layout
    // TextFieldFrame constructor adds JTextFields to JFrame
    public Display()
    {
+       
+               
       super("Cars");    //TOP OF DISPLAY SHOWS CARS
       setLayout(new FlowLayout());
+        //Layout
+        layout1 = new FlowLayout();
+        setLayout(layout1);        
+        container1 = getContentPane(); // get container to layout
+       //Layout
+       layout1.setAlignment(FlowLayout.CENTER);
 
+
+               
+               
+      
       //Constructors
          //TOP PART: BUTTONS AND DB STATES 
         //Previous Jbutton
         previousB = new JButton("Previous"); // button with text
+                //previousB.setAlignment(FlowLayout.LEFT);
         add(previousB); // add plainJButton to JFrame
             // firstDBT JTextField
             firstDBT = new JTextField(first, 1);
@@ -87,7 +112,11 @@ import java.awt.Container;  //For Flow Layout
         //Next Jbutton
         nextB = new JButton("Next"); // button with text
         add(nextB); // add plainJButton to JFrame
-    
+                       // realign attached components
+         
+        
+        
+               
          //TOP MIDDLE: CAR DESCRIPTIONS
         //carID JLable
         carIDL = new JLabel("Car ID:");
@@ -157,9 +186,10 @@ import java.awt.Container;  //For Flow Layout
             deleteB.setToolTipText("Click to Delete Current Entry");
             add(deleteB); // add plainJButton to JFrame
 
-            
-            //FROM BOOK EXAMPLE
-      //TEXT LABLES CONSTRUCTED
+
+      
+        //FROM BOOK EXAMPLE
+       //TEXT LABLES CONSTRUCTED
             // construct textfield with default text
                 textField2 = new JTextField(car);
                 add(textField2); // add textField2 to JFrame
@@ -225,4 +255,8 @@ import java.awt.Container;  //For Flow Layout
          JOptionPane.showMessageDialog(null, string); 
       } 
    } // end private inner class TextFieldHandler
+   
+   
+
+   
 } // end class TextFieldFrame
