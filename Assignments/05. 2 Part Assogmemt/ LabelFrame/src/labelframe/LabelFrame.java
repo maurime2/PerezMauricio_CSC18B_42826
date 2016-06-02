@@ -32,8 +32,18 @@ public class LabelFrame extends JFrame
 
       // JLabel constructor with string, Icon and alignment arguments
       Icon bug = new ImageIcon(getClass().getResource("bug1.png"));
+      
+            /*
+            Constant Description Constant Description
+            Horizontal-position constants       Vertical-position constants
+            LEFT    Place text on the left      TOP     Place text at the top
+            CENTER  Place text in the center    CENTER  Place text in the center
+            RIGHT   Place text on the right     BOTTOM  Place text at the bottom
+            */
       label2 = new JLabel("Label with text and icon", bug, 
          SwingConstants.LEFT);
+      
+      
       label2.setToolTipText("This is label2");
       add(label2); // add label2 to JFrame
 

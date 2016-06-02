@@ -1,20 +1,24 @@
-//Libraries
-package labelframe;
-// Fig. 12.7: LabelTest.java
-// Testing LabelFrame.
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package textfieldtest;
+
+// Fig. 12.10: TextFieldTest.java
+// Testing TextFieldFrame.
 import javax.swing.JFrame;
 
-public class LabelTest 
+public class TextFieldTest
 {
    public static void main(String[] args)
    { 
-      LabelFrame labelFrame = new LabelFrame(); //
-      labelFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      labelFrame.setSize(260, 180); //FRAME SIZE
-      labelFrame.setVisible(true);  //DISPLAYS FRAME
+      TextFieldFrame textFieldFrame = new TextFieldFrame(); 
+      textFieldFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      textFieldFrame.setSize(350, 100); 
+      textFieldFrame.setVisible(true); 
    } 
-} // end class LabelTest
-
+} // end class TextFieldTest
 
 /**************************************************************************
  * (C) Copyright 1992-2014 by Deitel & Associates, Inc. and               *
@@ -30,3 +34,4 @@ public class LabelTest
  * consequential damages in connection with, or arising out of, the       *
  * furnishing, performance, or use of these programs.                     *
  *************************************************************************/
+

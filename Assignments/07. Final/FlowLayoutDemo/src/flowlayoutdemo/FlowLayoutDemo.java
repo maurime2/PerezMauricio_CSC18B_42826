@@ -1,19 +1,19 @@
 //Libraries
-package labelframe;
-// Fig. 12.7: LabelTest.java
-// Testing LabelFrame.
+package flowlayoutdemo;
+// Fig. 12.40: FlowLayoutDemo.java
+// Testing FlowLayoutFrame.
 import javax.swing.JFrame;
 
-public class LabelTest 
+public class FlowLayoutDemo 
 {
    public static void main(String[] args)
    { 
-      LabelFrame labelFrame = new LabelFrame(); //
-      labelFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      labelFrame.setSize(260, 180); //FRAME SIZE
-      labelFrame.setVisible(true);  //DISPLAYS FRAME
+      FlowLayoutFrame flowLayoutFrame = new FlowLayoutFrame(); 
+      flowLayoutFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      flowLayoutFrame.setSize(300, 75); 
+      flowLayoutFrame.setVisible(true); 
    } 
-} // end class LabelTest
+} // end class FlowLayoutDemo
 
 
 /**************************************************************************

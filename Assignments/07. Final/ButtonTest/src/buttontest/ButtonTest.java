@@ -1,20 +1,20 @@
 //Libraries
-package labelframe;
-// Fig. 12.7: LabelTest.java
-// Testing LabelFrame.
+package buttontest;
+
+// Fig. 12.16: ButtonTest.java
+// Testing ButtonFrame.
 import javax.swing.JFrame;
 
-public class LabelTest 
+public class ButtonTest 
 {
    public static void main(String[] args)
    { 
-      LabelFrame labelFrame = new LabelFrame(); //
-      labelFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      labelFrame.setSize(260, 180); //FRAME SIZE
-      labelFrame.setVisible(true);  //DISPLAYS FRAME
+      ButtonFrame buttonFrame = new ButtonFrame(); 
+      buttonFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      buttonFrame.setSize(275, 110); 
+      buttonFrame.setVisible(true); 
    } 
-} // end class LabelTest
-
+} // end class ButtonTest
 
 /**************************************************************************
  * (C) Copyright 1992-2014 by Deitel & Associates, Inc. and               *
