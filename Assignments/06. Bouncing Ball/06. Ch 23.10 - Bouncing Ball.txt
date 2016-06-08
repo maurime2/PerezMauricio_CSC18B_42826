@@ -1,4 +1,13 @@
 Chapter 23.10 - Bouncing Ball
 Due 5.17.16 at 600PM.
 
+23.10 (Bouncing Ball)
+Write a program that bounces a blue ball inside a JPanel.
+
+The ball should begin moving with a mousePressed event. 
+When the ball hits the edge of the JPanel,
+	it should bounce off the edge and continue in the opposite direction. 
+
+The ball should be updated using a Runnable.
+
 Be sure to document how long it took to write this program.

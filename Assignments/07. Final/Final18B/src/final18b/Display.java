@@ -85,7 +85,7 @@ import java.awt.BorderLayout;   //adds border layouts
         setLayout(layout1);        
         container1 = getContentPane(); // get container to layout
        //Layout
-       layout1.setAlignment(FlowLayout.CENTER);
+       layout1.setAlignment(FlowLayout.LEADING);
 
 
                
@@ -115,6 +115,11 @@ import java.awt.BorderLayout;   //adds border layouts
                        // realign attached components
          
         
+        layout2 = new FlowLayout();
+        setLayout(layout2);
+        container2 = getContentPane(); // get container to layout
+        //Layout
+        layout2.setAlignment(FlowLayout.TRAILING);
         
                
          //TOP MIDDLE: CAR DESCRIPTIONS
@@ -188,6 +193,8 @@ import java.awt.BorderLayout;   //adds border layouts
 
 
       
+
+            
         //FROM BOOK EXAMPLE
        //TEXT LABLES CONSTRUCTED
             // construct textfield with default text
