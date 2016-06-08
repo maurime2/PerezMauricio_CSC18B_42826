@@ -10,7 +10,7 @@ public class Final18B {
       //New Text Frame
       Display display = new Display(); 
       display.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      display.setSize(350, 100); 
+      display.setSize(500, 500); 
       display.setVisible(true); 
     }//Main End
     
