@@ -1,8 +1,12 @@
 //Libraries
 package final18b;
+import javax.swing.*;
 import java.awt.FlowLayout;             //organises Flow
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
@@ -35,7 +39,7 @@ import java.awt.BorderLayout;   //adds border layouts
    
            
    
-   
+   //firstDBT,lastDBT, carIDT, carMakeT, carModelT, carYearT, carMilegeT, entryT
    //TEXT LABLES
    private final JTextField firstDBT; // text field with set size
    private final JTextField lastDBT; // text field with set size
