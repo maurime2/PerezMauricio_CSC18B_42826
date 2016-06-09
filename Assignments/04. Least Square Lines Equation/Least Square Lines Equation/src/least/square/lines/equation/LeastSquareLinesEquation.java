@@ -40,9 +40,9 @@ Write a Java console application, that does the following:
 
     Path to open file: 
     
-    E:\\00. Programing\\01. CSC 18B - Java Advanced Objects\\PerezMauricio_CSC18B_42826\\Assignments\\04. Least Square Lines Equation\\ReadTextFile\\src\\clients.txt
-    E:\00. Programing\01. CSC 18B - Java Advanced Objects\PerezMauricio_CSC18B_42826\Assignments\04. Least Square Lines Equation\Least Square Lines Equation\src\least\square\lines\equation\another_test.txt
-    E:\00. Programing\01. CSC 18B - Java Advanced Objects\PerezMauricio_CSC18B_42826\Assignments\04. Least Square Lines Equation\Least Square Lines Equation\src\least\square\lines\equation\data.txt
+E:\\00. Programing\\01. CSC 18B - Java Advanced Objects\\PerezMauricio_CSC18B_42826\\Assignments\\04. Least Square Lines Equation\\ReadTextFile\\src\\clients.txt
+E:\00. Programing\01. CSC 18B - Java Advanced Objects\PerezMauricio_CSC18B_42826\Assignments\04. Least Square Lines Equation\Least Square Lines Equation\src\least\square\lines\equation\another_test.txt
+E:\00. Programing\01. CSC 18B - Java Advanced Objects\PerezMauricio_CSC18B_42826\Assignments\04. Least Square Lines Equation\Least Square Lines Equation\src\least\square\lines\equation\data.txt
 
 
 */
@@ -79,8 +79,6 @@ public class LeastSquareLinesEquation {
         
         //Reads In text
         ReadTextFileObject.readText(textFile,  x, y, sumX,  sumY, sumXX, prodXY);
-        
-        
-    }
+        }
     
 }

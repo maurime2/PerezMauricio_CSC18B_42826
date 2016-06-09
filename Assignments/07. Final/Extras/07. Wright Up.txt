@@ -1,0 +1,31 @@
+Perfection is a bad thing to strive for sometimes...
+
+I started by making my layout, nice and simple. Had all my buttons, and my text boxes, etc..
+
+When it came time to formating the layout, I kept getting stuck in the way theise items were being droped into my 
+layout. I must have changed my sesign about 2 times before i gave up, and setteled to go for a BorderLayout. Grid layout was just unsucessfull.
+
+Once i got my layout to work, I set out to create my test cases for my event handlers. This is what I have working:
+
+	- I can list though my pages, by clicking on the Previous and Next buttons, or changing the index number, you can
+	  list the different cars on the database.
+	
+	- You can browse all vehicles in the terminal.
+	
+	- you can search for any vehicle, any make, any year, any millage on the find section my submitting the info
+		through the JTextBox or the find JButton.
+		
+What's Missing
+	- Actual readout to a linkes SQL database. Just Could not do it...
+	
+	- input of a new item to the database (in my case, the existing array's that hold info)
+	
+	- Deleting the items from the database (Partialy started)
+
+Each of the event handlers were created to simply start making test cases for each. I know i could finish them if i had more time.
+I got too hung up on the layout of the project that i did not allocate enough time to make my test cases which are not all that dificult to implement.
+
+	I would simply null all the deleted data, and move down data higher up in the array down one value, thus simply shifting the data down.
+	For adding data, i would do the same, but in reverse, and instedd of null, i would add the data that was inputed into the JTextBoxes for each represented value.
+	
+All in all, good assignment, just got hung up on the design.

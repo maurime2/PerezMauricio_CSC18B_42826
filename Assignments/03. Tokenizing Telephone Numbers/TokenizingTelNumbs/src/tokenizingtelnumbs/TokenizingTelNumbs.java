@@ -50,7 +50,8 @@ public class TokenizingTelNumbs {
         do{
             //Input Number   
             do{
-            System.out.print("Input a Phone Number: (xxx) xxx - xxxx: ");
+            System.out.println("Input a Phone Number: Area Code Cannot Start with 0 or 1");    
+            System.out.print("(xxx) xxx - xxxx: ");
             phoneNumbOrig=input.nextLine();
             System.out.println("You Input: "+phoneNumbOrig );
         

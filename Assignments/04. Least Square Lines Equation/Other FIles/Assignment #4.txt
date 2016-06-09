@@ -37,3 +37,5 @@ s l o p e space equals space fraction numerator begin display style sum for blan
     3. Flowchart of your program's logic ( up to 10 points )
 
     Path to open file: file://C:/data.txt
+	
+	

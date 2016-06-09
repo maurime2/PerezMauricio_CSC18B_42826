@@ -1,0 +1,24 @@
+This assignment called for a telephone number to be input by a user, to then be printed as tokens on the terminal.
+
+My method for solving this problem, was to first sanatize the user inputs, so that when the Program was to tokenize the phone number, nothing would go astray.
+
+I achived this by allowing all inputs by the user. This way I can discars his unwanted inputs to only be left with a Phone number.
+
+By inputing all the user inputs into a string, I then used regular expressions to discard anything that was not a number.
+
+Aftet that, we need to check 2 things to assure that the inputs are indeed a telephone number:
+ 1. The area code of the number cannot begin with a 0 or a 1.
+ 2. the phone number must be exactly 10 digits.
+ 
+ I executed the first, thinking that it would be faster to fail that test, than to go through the entirer sanatized input.
+ Remember that if the user inputs, more than 10 digits, I would atleast have to find the first 10, then test the first digit for a 1 or a 0.
+ 
+Once theise test paessed, we can prepare the phone number for tokenizing.
+
+I take the string of 10 digits, and put it in another string in the format of "(XXX)XXX-XXXX"
+
+This allows me to simply tokenize at all non numeric numbers not including spaces.
+
+To not get a value of 4 tokens, I temporarly place the formated string into a temporarie string, and replacing the open parentasies "(" with a space.
+Now when I call my tokens, i will get splits at the closed parentasies ")" and the minus sign "-". It is a bit of cheating, but the way I was calling my token,
+I kept getting 4 tokens, the first one being a blank. This was the only way I was able to solve my problem.

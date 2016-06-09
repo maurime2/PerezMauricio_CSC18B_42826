@@ -1,0 +1,22 @@
+This assignment took me about 2 hours, plus 2 hours of studying the I/O in the chapters.
+
+34 - LSLINES EQUATION
+180 - Read Text File
+
+
+This Assignment was a bit tricky. New material always is when you dont understand whats going on 100%
+
+We were tasked with opening an existing set of data, and creating a linear equation with it: Y=MX+B
+
+Using the x and y data points, we were to not only read in the data, print it, manipulated to find the components of the linear equation,
+we were asked to print the linear equation at the end of the data read.
+
+This was tricky because we had to gather all the data while reading in new data, and keeping track of the components that would help us find the slope M, and the y intercept B.
+
+I was not sucessfull in writing the final equation out into a file, but was able to print it to the terminal.
+
+I also dont know if the formula for finding the linear equation was incorrect in the instructions, I did my math on an 
+excell spreadsheet, and could not come up with the numbers expected, but my spreadsheet dose match my data from the console.
+
+See extras for spreadsheet.
+

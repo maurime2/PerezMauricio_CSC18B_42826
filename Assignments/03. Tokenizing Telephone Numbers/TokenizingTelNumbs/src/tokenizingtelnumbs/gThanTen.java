@@ -40,8 +40,7 @@ public class gThanTen {
                     //check if count == 10
                     if(count == 10){
                         valid = true;
-                    }
-                    
+                    }               
             }//End CHeck for first digit for loop
             
         }//End If greater than 10 if statement
@@ -55,6 +54,4 @@ public class gThanTen {
         //return valid or invalid
         return valid;
     }
-    
-    
 }//gThanTen Class End
